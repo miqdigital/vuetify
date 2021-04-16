@@ -28,7 +28,7 @@
 
 <script>
   // Utilities
-  import { differenceInHours, isBefore } from 'date-fns'
+  // import { differenceInHours, isBefore } from 'date-fns'
   import { get, sync } from 'vuex-pathify'
 
   export default {
@@ -38,17 +38,16 @@
       last: sync('user/last@promotion'),
       name: get('route/name'),
       hasAltPromotion () {
-        const now = Date.now()
-
-        return !isBefore(now, new Date(2021, 3, 27))
+        return true
       },
       hasPromotion () {
-        const now = Date.now()
+        return false
+        // const now = Date.now()
 
-        return (
-          isBefore(now, new Date(2021, 3, 29)) &&
-          differenceInHours(now, Number(this.last)) > 1
-        )
+        // return (
+        //   isBefore(now, new Date(2021, 3, 29)) &&
+        //   differenceInHours(now, Number(this.last)) > 1
+        // )
       },
     },
 
