@@ -23,6 +23,12 @@ Get started with Vuetify, the world’s most popular Vue.js framework for buildi
 
 ## Vue CLI Install
 
+<alert type="error">
+
+  You are viewing documentation for **Vuetify 2**. For instructions on installing **Vuetify 3**, navigate to the [Version 3 Installation Guide](https://next.vuetifyjs.com/introduction/guide/)
+
+</alert>
+
 <alert type="warning">
 
   For information on how to use Vue CLI, visit the [official documentation](https://cli.vuejs.org/).
